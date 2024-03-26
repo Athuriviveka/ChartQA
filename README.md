@@ -2,7 +2,7 @@
 
 Authors: Ahmed Masry, Do Long, Jia Qing Tan, Shafiq Joty, Enamul Hoque
 
-Paper Link: ChartQA
+Paper Link: [ChartQA](https://arxiv.org/pdf/2203.10244v1.pdf)
 
 Updates
 
