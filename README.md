@@ -1,8 +1,9 @@
-#ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning
+#Methods for Facial Expression Recognition
+Reference:(https://github.com/ShuvenduRoy/SSL_FER/tree/main)
 
-Authors: Ahmed Masry, Do Long, Jia Qing Tan, Shafiq Joty, Enamul Hoque
+Paper Link: [FER](https://arxiv.org/pdf/2208.00544v1.pdf)
 
-Paper Link: [ChartQA](https://arxiv.org/pdf/2203.10244v1.pdf)
+ABOUT
 
-Updates
+
 
