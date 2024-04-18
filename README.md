@@ -72,10 +72,11 @@ Dataset : Folder containing project datasets.
 
 
 saved_models : Folder for storing trained models
+
 fer_dataset_preprocessor.py : This Python script is responsible for preprocessing the original FER2013 dataset. It splits the dataset into labeled and unlabeled data and further categorizes the labeled data into four different categories based on the number of samples per class (10, 25, 100, and 250). This preprocessing step is crucial for preparing the data for training and evaluation in a semi-supervised learning setup.
+
 Temporal_ensembling.ipynb: 
 This Jupyter Notebook contains the implementation of the Temporal Ensembling algorithm for semi-supervised learning applied to the FER2013 dataset. The notebook includes:
-
 CNN modeling: Definition of the convolutional neural network architecture for facial expression recognition.
 Parameter definition: Specification of hyperparameters and model configurations.
 Data augmentation: Integration of data augmentation techniques to increase the diversity of the training data and improve model generalization.
