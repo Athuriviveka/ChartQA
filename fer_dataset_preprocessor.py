@@ -36,14 +36,18 @@ for num_samples in num_labeled_samples:
     for emotion in emotions:
         # Get the path to the emotion directory
         emotion_dir = os.path.join(labeled_data_dir, emotion)
+        
         # Check if the directory exists and is a directory
         if os.path.isdir(emotion_dir) and not emotion == '.ipynb_checkpoints':
+            # Create a directory for the current emotion within the scenario directory
+            emotion_scenario_dir = os.path.join(scenario_dir, emotion)
+            os.makedirs(emotion_scenario_dir, exist_ok=True)
             # List all image files for the current emotion, excluding .DS_Store
             image_files = [f for f in os.listdir(emotion_dir) if not f.startswith('.')]
             # Randomly select num_samples for labeling
             labeled_files = random.sample(image_files, num_samples)
             # Move the labeled files to the labeled directory
-            move_files(emotion_dir, scenario_dir, labeled_files)
+            move_files(emotion_dir, emotion_scenario_dir, labeled_files)
             # Add the labeled files to the set of all labeled files
             all_labeled_files.update(labeled_files)
         else:
@@ -58,7 +62,7 @@ for emotion in emotions:
     if not emotion == '.ipynb_checkpoints' and os.path.isdir(emotion_dir) :
         # List all files (excluding directories) for the current emotion
         remaining_files = [f for f in os.listdir(emotion_dir) if os.path.isfile(os.path.join(emotion_dir, f)) and not f.startswith('.')]
+        # unlabeled_files = random.sample(remaining_files, 10)
         move_files(emotion_dir, unlabeled_data_dir, remaining_files)
     else:
         print(f"Directory '{emotion_dir}' does not exist or is not a directory.")
-s
