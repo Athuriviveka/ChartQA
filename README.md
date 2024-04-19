@@ -30,31 +30,9 @@ The task is to categorize each face based on the emotion shown in the facial exp
 1. **Dataset:** Folder containing project datasets.
 
 |--- Dataset
-|   |--- test                   # Folder containing test images (original dataset)
-|   |   |--- Angry             
-|   |   |--- Disgust            
-|   |   |--- Fear               
-|   |   |--- Happy              
-|   |   |--- Sad                
-|   |   |--- Surprise           
-|   |   |--- Neutral            
-|   |--- train                  # Folder containing original training data(original dataset)
-|   |   |--- (same as above)   
+|   |--- test                   # Folder containing test images (original dataset)         
+|   |--- train                  # Folder containing original training data(original dataset)  
 |   |--- labeled_scenarios      # Folder containing labeled scenarios(Preprocessed dataset)
-|   |   |--- 10_labeled         
-|   |   |   |--- Angry          
-|   |   |   |--- Disgust        
-|   |   |   |--- Fear           
-|   |   |   |--- Happy          
-|   |   |   |--- Sad            
-|   |   |   |--- Surprise       
-|   |   |   |--- Neutral        
-|   |   |--- 25_labeled         
-|   |   |   |--- (same as above)
-|   |   |--- 100_labeled        
-|   |   |   |--- (same as above)
-|   |   |--- 250_labeled        
-|   |   |   |--- (same as above)
 |   |--- unlabeled              # Folder containing unlabeled data(Preprocessed dataset)
 
 
